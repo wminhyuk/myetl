@@ -3,7 +3,6 @@ import pandas as pd
 
 def load_data(data_path):
     """CSV -> Parquet 변환
-
     주어진 data_path 경로에 있는 data.csv 파일을 읽어,
     같은 경로에 data.parquet 파일로 저장합니다.
     """
