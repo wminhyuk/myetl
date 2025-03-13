@@ -25,7 +25,7 @@ with DAG(
     make_data = BashOperator(
         task_id="make_data",
         bash_command=(
-            "bash /home/seominhyuk/airflow/make_data.sh /home/seominhyuk/data/2025/03/12/01"
+            "bash /home/seominhyuk/airflow/make_data.sh /home/seominhyuk/data/{{ data_interval_start.in_tz('Asia/Seoul').strftime('%Y/%m/%d/%H') }}"
         )
     )
     
